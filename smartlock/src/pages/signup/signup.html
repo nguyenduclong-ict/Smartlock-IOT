@@ -1,0 +1,46 @@
+<ion-content padding>
+  <button ion-fab top left color="primary" id="float-back" (click)="backClose()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </button>
+  <div class="wr">
+
+    <ion-item class="item-top">
+      <ion-label>
+        <ion-icon name="ios-person-outline" item-left></ion-icon>
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="username" placeholder="Tên tài khoản"></ion-input>
+    </ion-item>
+
+    <ion-item class="item-center">
+      <ion-label>
+        <ion-icon name="ios-lock-outline" item-left></ion-icon>
+      </ion-label>
+      <ion-input type="password" [(ngModel)]="password" placeholder="Mật khẩu"></ion-input>
+    </ion-item>
+
+    <ion-item class="item-center">
+      <ion-label>
+        <ion-icon name="ios-lock-outline" item-left></ion-icon>
+      </ion-label>
+      <ion-input type="password" [(ngModel)]="repassword" placeholder="Nhập lại mật khẩu"></ion-input>
+    </ion-item>
+
+    <ion-item class="item-center">
+      <ion-label>
+        <ion-icon name="ios-person-outline" item-left></ion-icon>
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="name" placeholder="Họ tên"></ion-input>
+    </ion-item>
+
+    <ion-item class="item-bellow">
+      <ion-label>
+        <ion-icon name="ios-mail-outline" item-left></ion-icon>
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="email" placeholder="Email khôi phục"></ion-input>
+    </ion-item>
+
+    <button class="sign-up" (click)="signUp()" type="submit" ion-button full favourite>Đăng kí tài khoản</button>
+
+
+  </div>
+</ion-content>

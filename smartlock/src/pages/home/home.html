@@ -1,0 +1,35 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Danh sách thiết bị</ion-title>
+    </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    <!-- <ion-list>
+
+        <ion-item *ngFor="let item of listDevices">
+            <ion-label> {{ item.name }} </ion-label>
+            <br>
+            <ion-label> TT : {{ item.status }} </ion-label>
+            <ion-toggle [(ngModel)]="item.allowOpen"></ion-toggle>
+        </ion-item>
+
+    </ion-list> -->
+
+    <ion-list *ngFor="let item of listDevices" >
+        <ion-item [ngClass]="{'online' : item.online == true , 'offline' : item.online == false}">
+                <ion-avatar item-start >
+                        <img src="../../assets/icon/locked.png">
+                    </ion-avatar>
+                    <ion-label> {{ item.name }}</ion-label>
+                    <ion-label>Trạng thái : {{ item.status }}</ion-label>
+        
+                    <ion-toggle [(ngModel)]="item.allowOpen" (ionChange)="changeAllow(item.mac, item.allowOpen)" ></ion-toggle>
+        </ion-item>
+    </ion-list>
+
+    <button ion-fab color="primary" id="float-add" (click)="createAlertInput('Thêm thiết bị', '')">
+        <ion-icon name="add"></ion-icon>
+    </button>
+</ion-content>

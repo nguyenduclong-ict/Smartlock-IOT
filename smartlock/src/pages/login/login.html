@@ -1,0 +1,27 @@
+<ion-content padding>
+    <img src="../../assets/images/key-flat.png">
+
+    <div class="wrap">
+        <ion-item class="item-top">
+            <ion-label>
+                <ion-icon name="ios-person-outline" item-left></ion-icon>
+            </ion-label>
+            <ion-input type="text" [(ngModel)]="username" placeholder="Username" id="inp-username"></ion-input>
+        </ion-item>
+    
+        <ion-item class="item-bellow">
+            <ion-label>
+                <ion-icon name="ios-lock-outline" item-left></ion-icon>
+            </ion-label>
+            <ion-input type="password" [(ngModel)]="password" placeholder="Password" id="inp-pass"></ion-input>
+        </ion-item>
+    
+        <button class="login" (click)="login()" type="submit" ion-button full favourite >Đăng nhập</button>
+    
+        <div>
+            <p (click)="signup()">Đăng kí - </p>
+            <p (click)="recoveryPass()">Quên mật khẩu?</p>
+        </div>
+    </div>
+    
+</ion-content>

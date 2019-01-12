@@ -1,0 +1,21 @@
+page-home {
+    #float-add {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .input-wrapper {
+        display: block;
+    }
+
+    .online {
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    .offline {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

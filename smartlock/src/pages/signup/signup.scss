@@ -1,0 +1,49 @@
+page-signup {
+
+  ion-input {
+    position: static;
+  }
+
+  ion-content {
+    .wr {
+      margin-top: 50%;
+    }
+
+    background-image: url("../../assets/images/bg.jpg");
+    background-size: cover;
+    text-align: center;
+
+    ion-item.item-top {
+      margin-top: 50px;
+      background-color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 1px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+    }
+
+    ion-item.item-center {
+      background-color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 1px;
+
+    }
+
+    ion-item.item-bellow {
+      background-color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 1px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+    }
+
+    .sign-up {
+      border-radius: 5px;
+    }
+
+    #float-back {
+      background-color: transparent;
+      width: 50px;
+      margin-left: -20px;
+    }
+  }
+}

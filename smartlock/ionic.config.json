@@ -1,0 +1,7 @@
+{
+  "name": "smartlock",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
